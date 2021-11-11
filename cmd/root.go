@@ -122,6 +122,8 @@ var rootCmd = &cobra.Command{
 			}
 			jww.DEBUG.Printf("Authenticated channel to %+v created over round %d", requestor, rid)
 
+			time.Sleep(15000 * time.Millisecond)
+
 			intro := "Hi! Please send me an email address to register as an xx messenger " +
 				"tester for the upcoming xx November Community Sale November 19 through November 24.  " +
 				"This sale is open to community members only and is non US"
